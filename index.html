@@ -10,8 +10,8 @@
       font-family: 'Afacad', sans-serif;      
       background-color: #212129;
       margin: 0;
-      padding: 0;
       color: #ECF0F1;
+      font-size: 0.75rem;
     }
 
     table {
@@ -33,16 +33,51 @@
       color: #fff;
     }
 
+    .sTbl th{
+      background-color: rgb(235, 121, 103); /* Set your desired background color here */
+      color:#212129;
+    }
+
     tr:nth-child(even) {
       background-color: rgb(42, 40, 47);
+    }
+
+    .sT tr:nth-child(1){
+      background-color: rgb(212, 198, 238);
+      color: #212129;
+    }
+
+    .sT tr:nth-child(2){
+      background-color: rgb(193, 181, 217);
+      color: #212129;
+    }
+
+    .sT tr:nth-child(3){
+      background-color: rgb(171, 161, 193);
+      color: #212129;
+    }
+
+    .sT tr:nth-child(4){
+      background-color: rgb(149, 140, 168);
+      color: #212129;
+    }
+
+    .sT tr:nth-child(5){
+      background-color: rgb(127, 119, 143);
+      color: #212129;
     }
 
     tr:hover {
       background-color: hsl(258, 12%, 34%);
     }
 
+    .sT tr:hover {
+      background-color: hsla(259, 100%, 64%, 0.25);
+      color: rgb(255, 230, 0);
+    }
+
     h1, h2, h3{
-        margin-left: 3rem;
+        margin-left: 2.5rem;
         margin-right: 3rem;
     }
 
@@ -55,12 +90,49 @@
       padding-left: 2rem;
     }
 
-    .Week {
+    .button{
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 7px 12px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: hsl(258, 12%, 34%);
+
+    color: #fff;
+    margin: 15px;
+    }
+
+    .button:hover{
+      background: hsl(257, 13%, 46%);
+    }
+
+    .BlockPick { 
+    justify-content: center;
     background-color: #31313a; /* Choose your desired background color */
-    margin: 2rem;
+    margin: 1.5rem;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 15px;
+    text-align: center; /* Center the items horizontally */
+    display: flex;      /* Create a flex container */
+    align-items: center;  
+    }
+
+    .Block {
+    background-color: #31313a; /* Choose your desired background color */
+    margin: 1.5rem;
     padding-bottom: 1px;
     padding-top: 1px;
     border-radius: 15px;    
+    }
+
+    .Block h1 {
+      margin-left: 2rem;
     }
   </style>
 </head>
@@ -68,8 +140,21 @@
 <h1>SPSM Ping Pong Tournament</h1>
 <h2>Head Refree: Ramy</h2>
 <h3>Note: If a player is not present for their scheduled ping-pong game, they will be automatically considered for conceding the match.</h3>
-<div class="Week">
-<h1>Week 1</h1>
+
+<div class="BlockPick">
+  <a href="index.html" class="button">
+    Bracket Schedule
+  </a>
+  <a href="scoreTable.html" class="button">
+    Score Board
+  </a>
+
+  <a href="placements.html" class="button">
+    Placements
+  </a>
+</div>
+<div class="Block">
+<h1>Week 1 - Dec 17</h1>
 
   <table>
     <thead>
@@ -100,7 +185,7 @@
 
       <!-- Group 3 - Games -->
       <tr>
-        <td>5</td><td>Daniel EL-Abbasy</td><td>0 - 0</td><td>Mina Shaker</td><td>Name</td>
+        <td>5</td><td>Daniel EAB</td><td>0 - 0</td><td>Mina Shaker</td><td>Name</td>
       </tr>
       <tr>
         <td>6</td><td>John Gendy</td><td>0 - 0</td><td>Pola Faris</td><td>Name</td>
@@ -125,8 +210,8 @@
     </tbody>
   </table>
 </div>
-<div class="Week">
-<h1>Week 2</h1>
+<div class="Block">
+<h1>Week 2 - Dec 24</h1>
 
   <table>
     <thead>
@@ -160,7 +245,7 @@
         <td>15</td><td>John Gendy</td><td>0 - 0</td><td>Mina Shaker</td><td>Name</td>
       </tr>
       <tr>
-        <td>16</td><td>Daniel EL-Abbasy</td><td>0 - 0</td><td>Pola Faris</td><td>Name</td>
+        <td>16</td><td>Daniel EAB</td><td>0 - 0</td><td>Pola Faris</td><td>Name</td>
       </tr>
 
       <!-- Group 4 - Games -->
@@ -182,8 +267,8 @@
     </tbody>
   </table>
 </div>
-<div class="Week">
-<h1>Week 3</h1>
+<div class="Block">
+<h1>Week 3 - Dec 31</h1>
 
   <table>
     <thead>
@@ -214,7 +299,7 @@
 
       <!-- Group 3 - Games -->
       <tr>
-        <td>25</td><td>Daniel EL-Abbasy</td><td>0 - 0</td><td>John Gendy</td><td>Name</td>
+        <td>25</td><td>Daniel EAB</td><td>0 - 0</td><td>John Gendy</td><td>Name</td>
       </tr>
       <tr>
         <td>26</td><td>Mina Shaker</td><td>0 - 0</td><td>Pola Faris</td><td>Name</td>
@@ -239,8 +324,6 @@
     </tbody>
   </table>
 </div>
-<div class="Week">
-  <p>More TBD</p>
-</div>
+
 </body>
 </html>
