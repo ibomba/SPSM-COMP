@@ -163,56 +163,56 @@
       <tr>
         <td>1</td>
         <td>Matthew Beshay</td>
-        <td>0</td>
-        <td>0</td>
+        <td>2</td>
+        <td>22</td>
       </tr>
       <tr>
         <td>2</td>
         <td>Peter Kelada</td>
-        <td>0</td>
-        <td>0</td>
+        <td>2</td>
+        <td>22</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>Mina Basterma</td>
+        <td>David Gobran</td>
         <td>0</td>
-        <td>0</td>
+        <td>14</td>
       </tr>
       <tr>
         <td>4</td>
         <td>Bishoy Ibrahim</td>
         <td>0</td>
-        <td>0</td>
+        <td>10</td>
       </tr>
       <tr>
         <td>5</td>
         <td>Youhanna Bebawy</td>
-        <td>0</td>
-        <td>0</td>
+        <td>1</td>
+        <td>20</td>
       </tr>
       <tr>
         <td>6</td>
         <td>Mina Fahmy</td>
-        <td>0</td>
-        <td>0</td>
+        <td>2</td>
+        <td>22</td>
       </tr>
       <tr>
         <td>7</td>
         <td>Patrick Beshay</td>
         <td>0</td>
-        <td>0</td>
+        <td>13</td>
       </tr>
       <tr>
         <td>8</td>
         <td>Youssef Shaker</td>
-        <td>0</td>
-        <td>0</td>
+        <td>2</td>
+        <td>22</td>
       </tr>
       <tr>
         <td>9</td>
         <td>Daniel EAB</td>
         <td>0</td>
-        <td>0</td>
+        <td>16</td>
       </tr>
       <tr>
         <td>10</td>
@@ -229,32 +229,32 @@
       <tr>
         <td>12</td>
         <td>Pola Faris</td>
-        <td>0</td>
-        <td>0</td>
+        <td>2</td>
+        <td>22</td>
       </tr>
       <tr>
         <td>13</td>
         <td>Kirolos Ibrahim</td>
-        <td>0</td>
-        <td>0</td>
+        <td>2</td>
+        <td>22</td>
       </tr>
       <tr>
         <td>14</td>
         <td>Mark Khalil</td>
         <td>0</td>
-        <td>0</td>
+        <td>3</td>
       </tr>
       <tr>
         <td>15</td>
         <td>Pierre Hanna</td>
         <td>0</td>
-        <td>0</td>
+        <td>9</td>
       </tr>
       <tr>
         <td>16</td>
         <td>Andry Nasief</td>
-        <td>0</td>
-        <td>0</td>
+        <td>2</td>
+        <td>22</td>
       </tr>
       <tr>
         <td>17</td>
@@ -266,13 +266,13 @@
         <td>18</td>
         <td>Andrew Fahim</td>
         <td>0</td>
-        <td>0</td>
+        <td>5</td>
       </tr>
       <tr>
         <td>19</td>
         <td>Joe Ebrahim</td>
-        <td>0</td>
-        <td>0</td>
+        <td>2</td>
+        <td>22</td>
       </tr>
       <tr>
         <td>20</td>
@@ -288,6 +288,23 @@
 
 <script>
   // JavaScript to sort the specified table based on the score
+  document.addEventListener('DOMContentLoaded', function () {
+      var table = document.getElementById('scoreTable');
+      var tbody = table.querySelector('tbody');
+      var rows = [].slice.call(tbody.querySelectorAll('tr'));
+
+      rows.sort(function (a, b) {
+          var aValue = parseInt(a.cells[3].textContent);
+          var bValue = parseInt(b.cells[3].textContent);
+          return bValue - aValue;
+      });
+
+      rows.forEach(function (row) {
+          tbody.appendChild(row);
+      });
+  });
+
+
   document.addEventListener('DOMContentLoaded', function () {
       var table = document.getElementById('scoreTable');
       var tbody = table.querySelector('tbody');
