@@ -103,36 +103,35 @@
     }
 
     .button{
-    font-size: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 7px 12px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: hsl(258, 12%, 34%);
-    font-weight: bold;
-    color: #fff;
-    margin: 15px;
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      padding: 7px 12px;
+      height: 100%;
+      width: 93%;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: hsl(258, 12%, 34%);
+      color: #fff;
+      font-weight: bold;
     }
 
     .button:hover{
       background: hsl(257, 13%, 46%);
     }
 
-    .BlockPick { 
-    justify-content: center;
-    background-color: #31313a; /* Choose your desired background color */
-    margin: 1.5rem;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    border-radius: 15px;
-    text-align: center; /* Center the items horizontally */
-    display: flex;      /* Create a flex container */
-    align-items: center;  
+    .BlockPick {
+      justify-content: space-evenly;
+      background-color: #31313a; /* Choose your desired background color */
+      margin: 1.5rem;
+      padding: 15px;
+      gap: 15px;
+      border-radius: 15px;
+      text-align: center; /* Center the items horizontally */
+      display: flex;      /* Create a flex container */
+      align-items: center;
     }
 
     .Block {
@@ -156,8 +155,6 @@
 </head>
 <body>
 <h1>SPSM Ping Pong Tournament</h1>
-<h2>Head Refree: Ramy (oh no...)</h2>
-<h3>Note: If a player is not present for their scheduled ping-pong game, they will be automatically considered for conceding the match.</h3>
 
 <div class="BlockPick">
   <a href="index.html" class="button">
@@ -170,13 +167,13 @@
   <a href="placements.html" class="button">
     Placements
   </a>
+
+  <a href="rules.html" class="button">
+    Rules
+  </a>
 </div>
 
-<div class="Block">
-  <div class="WildCard">
-  <h3>2 Wild Cards are given to 2 players who failed to qualify through normal play but had a higher performance than every other unqualified player. Players with Wild Cards qualify for the second bracket.</h3>
-  
-</div>
+
 </div>
 
   <!-- <div class="Block">
@@ -250,24 +247,7 @@
 </div>
 </div>
 
-<script>
-  // JavaScript to sort the specified table based on the score
-  document.addEventListener('DOMContentLoaded', function () {
-      var table = document.getElementById('scoreTable');
-      var tbody = table.querySelector('tbody');
-      var rows = [].slice.call(tbody.querySelectorAll('tr'));
-
-      rows.sort(function (a, b) {
-          var aValue = parseInt(a.cells[2].textContent);
-          var bValue = parseInt(b.cells[2].textContent);
-          return bValue - aValue;
-      });
-
-      rows.forEach(function (row) {
-          tbody.appendChild(row);
-      });
-  });
-</script>
+<p>Last Updated: 11:30 PM (Dec 20)</p>
 
 </body>
 </html>

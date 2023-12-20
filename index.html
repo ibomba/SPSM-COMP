@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&display=swap" rel="stylesheet">  <style>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
     body {
-      font-family: 'Afacad', sans-serif;      
+      font-family: 'Afacad', sans-serif;
       background-color: #212129;
       margin: 0;
       color: #ECF0F1;
@@ -22,7 +24,8 @@
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     }
 
-    th, td {
+    th,
+    td {
       border: 1px solid #ededed;
       padding: 10px;
       text-align: center;
@@ -38,27 +41,27 @@
       background-color: rgb(42, 40, 47);
     }
 
-    .sT tr:nth-child(1){
+    .sT tr:nth-child(1) {
       background-color: rgb(212, 198, 238);
       color: #212129;
     }
 
-    .sT tr:nth-child(2){
+    .sT tr:nth-child(2) {
       background-color: rgb(193, 181, 217);
       color: #212129;
     }
 
-    .sT tr:nth-child(3){
+    .sT tr:nth-child(3) {
       background-color: rgb(171, 161, 193);
       color: #212129;
     }
 
-    .sT tr:nth-child(4){
+    .sT tr:nth-child(4) {
       background-color: rgb(149, 140, 168);
       color: #212129;
     }
 
-    .sT tr:nth-child(5){
+    .sT tr:nth-child(5) {
       background-color: rgb(127, 119, 143);
       color: #212129;
     }
@@ -72,26 +75,28 @@
       color: rgb(255, 230, 0);
     }
 
-    h1, h2, h3{
-        margin-left: 2.5rem;
-        margin-right: 3rem;
+    h1,
+    h2,
+    h3 {
+      margin-left: 2.5rem;
+      margin-right: 3rem;
     }
 
-    h2{
+    h2 {
       font-size: 1.2rem;
-        color: rgb(241, 209, 23);
+      color: rgb(241, 209, 23);
     }
 
-    h3{
+    h3 {
       font-size: 1rem;
     }
 
-    p{
+    p {
       width: 90%;
       padding-left: 2rem;
     }
 
-    .button{
+    .button {
       font-size: 1rem;
       justify-content: center;
       align-items: center;
@@ -104,32 +109,35 @@
       border-radius: 4px;
       background: hsl(258, 12%, 34%);
       color: #fff;
-      margin: 15px;
       font-weight: bold;
     }
 
-    .button:hover{
+    .button:hover {
       background: hsl(257, 13%, 46%);
     }
 
     .BlockPick {
-      justify-content: center;
-      background-color: #31313a; /* Choose your desired background color */
+      justify-content: space-evenly;
+      background-color: #31313a;
+      /* Choose your desired background color */
       margin: 1.5rem;
-      padding-bottom: 1px;
-      padding-top: 1px;
+      padding: 15px;
+      gap: 15px;
       border-radius: 15px;
-      text-align: center; /* Center the items horizontally */
-      display: flex;      /* Create a flex container */
+      text-align: center;
+      /* Center the items horizontally */
+      display: flex;
+      /* Create a flex container */
       align-items: center;
     }
 
     .Block {
-    background-color: #31313a; /* Choose your desired background color */
-    margin: 1.5rem;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    border-radius: 15px;  
+      background-color: #31313a;
+      /* Choose your desired background color */
+      margin: 1.5rem;
+      padding-bottom: 1px;
+      padding-top: 1px;
+      border-radius: 15px;
     }
 
     .Block h1 {
@@ -139,197 +147,321 @@
     }
   </style>
 </head>
+
 <body>
 
-<h1>SPSM Ping Pong Tournament</h1>
-<h2>Head Refree: Ramy (oh no...)</h2>
-<h3>Note: If a player is not present for their scheduled ping-pong game, they will be automatically considered for conceding the match.</h3>
+  <h1>SPSM Ping Pong Tournament</h1>
 
-<div class="BlockPick">
-  <a href="index.html" class="button">
-    Bracket Schedule
-  </a>
-  <a href="scoreTable.html" class="button">
-    Score Board
-  </a>
+  <div class="BlockPick">
+    <a href="index.html" class="button">
+      Bracket Schedule
+    </a>
+    <a href="scoreTable.html" class="button">
+      Score Board
+    </a>
 
-  <a href="placements.html" class="button">
-    Placements
-  </a>
-</div>
-<div class="Block">
-<h1>Week 1 - Dec 17</h1>
+    <a href="placements.html" class="button">
+      Placements
+    </a>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Game #</th>
-        <th>Player 1</th>
-        <th>Score</th>
-        <th>Player 2</th>
-        <th>Winner</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Group 1 - Games -->
-      <tr>
-        <td>1</td><td>Peter Kelada</td><td>(11-8) (11-8)</td><td>David Gobran</td><td>Peter</td>
-      </tr>
-      <tr>
-        <td>2</td><td>Matthew Beshay</td><td>(11-7) (11-3)</td><td>Bishoy Ibrahim</td><td>Matthew</td>
-      </tr>
+    <a href="rules.html" class="button">
+      Rules
+    </a>
+  </div>
+  <div class="Block">
+    <h1>Week 1 - Dec 17</h1>
 
-      <!-- Group 2 - Games -->
-      <tr>
-        <td>3</td><td>Youhanna Bebawy</td><td>(9-11) (11-7) (8-11)</td><td>Mina Fahmy</td><td>Mina</td>
-      </tr>
-      <tr>
-        <td>4</td><td>Patrick Beshay</td><td>(6-11) (7-11)</td><td>Youssef Shaker</td><td>Youssef</td>
-      </tr>
+    <table>
+      <thead>
+        <tr>
+          <th>Game #</th>
+          <th>Player 1</th>
+          <th>Score</th>
+          <th>Player 2</th>
+          <th>Winner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Group 1 - Games -->
+        <tr>
+          <td>1</td>
+          <td>Peter Kelada</td>
+          <td>(11-8) (11-8)</td>
+          <td>David Gobran</td>
+          <td>Peter</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Matthew Beshay</td>
+          <td>(11-7) (11-3)</td>
+          <td>Bishoy Ibrahim</td>
+          <td>Matthew</td>
+        </tr>
 
-      <!-- Group 3 - Games -->
-      <tr>
-        <td>5</td><td>Daniel EAB</td><td>0 - 0</td><td>Mina Shaker</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>6</td><td>John Gendy</td><td>0 - 0</td><td>Pola Faris</td><td>Name</td>
-      </tr>
+        <!-- Group 2 - Games -->
+        <tr>
+          <td>3</td>
+          <td>Youhanna Bebawy</td>
+          <td>(9-11) (11-7) (8-11)</td>
+          <td>Mina Fahmy</td>
+          <td>Mina</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Patrick Beshay</td>
+          <td>(6-11) (7-11)</td>
+          <td>Youssef Shaker</td>
+          <td>Youssef</td>
+        </tr>
 
-      <!-- Group 4 - Games -->
-      <tr>
-        <td>7</td><td>Kiro Ibrahim</td><td>(11-2) (11-7)</td><td>Pierre Hanna</td><td>Kiro</td>
-      </tr>
-      <tr>
-        <td>8</td><td>Mark Khalil</td><td>(1-11) (2-11)</td><td>Andry Nasief</td><td>Andry</td>
-      </tr>
+        <!-- Group 3 - Games -->
+        <tr>
+          <td>5</td>
+          <td>Daniel EAB</td>
+          <td>0 - 0</td>
+          <td>Mina Shaker</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>John Gendy</td>
+          <td>0 - 0</td>
+          <td>Pola Faris</td>
+          <td>Name</td>
+        </tr>
 
-      <!-- Group 5 - Games -->
-      <tr>
-        <td>9</td><td>Misho Shaker</td><td>0 - 0</td><td>Joe Ebrahim</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>10</td><td>Andrew Fahim</td><td>0 - 0</td><td>Maro Fahim</td><td>Name</td>
-      </tr>
+        <!-- Group 4 - Games -->
+        <tr>
+          <td>7</td>
+          <td>Kiro Ibrahim</td>
+          <td>(11-2) (11-7)</td>
+          <td>Pierre Hanna</td>
+          <td>Kiro</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Mark Khalil</td>
+          <td>(1-11) (2-11)</td>
+          <td>Andry Nasief</td>
+          <td>Andry</td>
+        </tr>
 
-    </tbody>
-  </table>
-</div>
-<div class="Block">
-<h1>Week 2 - Dec 24</h1>
+        <!-- Group 5 - Games -->
+        <tr>
+          <td>9</td>
+          <td>Misho Shaker</td>
+          <td>0 - 0</td>
+          <td>Joe Ebrahim</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Andrew Fahim</td>
+          <td>0 - 0</td>
+          <td>Maro Fahim</td>
+          <td>Name</td>
+        </tr>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Game #</th>
-        <th>Player 1</th>
-        <th>Score</th>
-        <th>Player 2</th>
-        <th>Winner</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Group 1 - Games -->
-      <tr>
-        <td>11</td><td>Matthew Beshay</td><td>0 - 0</td><td>David Gobran</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>12</td><td>Peter Kelada</td><td>0 - 0</td><td>Bishoy Ibrahim</td><td>Name</td>
-      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="Block">
+    <h1>Week 2 - Dec 24</h1>
 
-      <!-- Group 2 - Games -->
-      <tr>
-        <td>13</td><td>Patrick Beshay</td><td>0 - 0</td><td>Mina Fahmy</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>14</td><td>Youhanna Bebawy</td><td>0 - 0</td><td>Youssef Shaker</td><td>Name</td>
-      </tr>
+    <table>
+      <thead>
+        <tr>
+          <th>Game #</th>
+          <th>Player 1</th>
+          <th>Score</th>
+          <th>Player 2</th>
+          <th>Winner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Group 1 - Games -->
+        <tr>
+          <td>11</td>
+          <td>Matthew Beshay</td>
+          <td>0 - 0</td>
+          <td>David Gobran</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Peter Kelada</td>
+          <td>0 - 0</td>
+          <td>Bishoy Ibrahim</td>
+          <td>Name</td>
+        </tr>
 
-      <!-- Group 3 - Games -->
-      <tr>
-        <td>15</td><td>John Gendy</td><td>0 - 0</td><td>Mina Shaker</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>16</td><td>Daniel EAB</td><td>(6-11) (10-11)</td><td>Pola Faris</td><td>Pola</td>
-      </tr>
+        <!-- Group 2 - Games -->
+        <tr>
+          <td>13</td>
+          <td>Patrick Beshay</td>
+          <td>0 - 0</td>
+          <td>Mina Fahmy</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Youhanna Bebawy</td>
+          <td>0 - 0</td>
+          <td>Youssef Shaker</td>
+          <td>Name</td>
+        </tr>
 
-      <!-- Group 4 - Games -->
-      <tr>
-        <td>17</td><td>Mark Khalil</td><td>0 - 0</td><td>Pierre Hanna</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>18</td><td>Kiro Ibrahim</td><td>0 - 0</td><td>Andry Nasief</td><td>Name</td>
-      </tr>
+        <!-- Group 3 - Games -->
+        <tr>
+          <td>15</td>
+          <td>John Gendy</td>
+          <td>0 - 0</td>
+          <td>Mina Shaker</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Daniel EAB</td>
+          <td>(6-11) (10-11)</td>
+          <td>Pola Faris</td>
+          <td>Pola</td>
+        </tr>
 
-      <!-- Group 5 - Games -->
-      <tr>
-        <td>19</td><td>Andrew Fahim</td><td>(0-11) (5-11)</td><td>Joe Ebrahim</td><td>Joe</td>
-      </tr>
-      <tr>
-        <td>20</td><td>Misho Shaker</td><td>0 - 0</td><td>Maro Fahim</td><td>Name</td>
-      </tr>
+        <!-- Group 4 - Games -->
+        <tr>
+          <td>17</td>
+          <td>Mark Khalil</td>
+          <td>0 - 0</td>
+          <td>Pierre Hanna</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Kiro Ibrahim</td>
+          <td>0 - 0</td>
+          <td>Andry Nasief</td>
+          <td>Name</td>
+        </tr>
 
-    </tbody>
-  </table>
-</div>
-<div class="Block">
-<h1>Week 3 - Dec 31</h1>
+        <!-- Group 5 - Games -->
+        <tr>
+          <td>19</td>
+          <td>Andrew Fahim</td>
+          <td>(0-11) (5-11)</td>
+          <td>Joe Ebrahim</td>
+          <td>Joe</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Misho Shaker</td>
+          <td>0 - 0</td>
+          <td>Maro Fahim</td>
+          <td>Name</td>
+        </tr>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Game #</th>
-        <th>Player 1</th>
-        <th>Score</th>
-        <th>Player 2</th>
-        <th>Winner</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Group 1 - Games -->
-      <tr>
-        <td>21</td><td>Peter Kelada</td><td>0 - 0</td><td>Matthew Beshay</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>22</td><td>David Gobran</td><td>0 - 0</td><td>Bishoy Ibrahim</td><td>Name</td>
-      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="Block">
+    <h1>Week 3 - Dec 31</h1>
 
-      <!-- Group 2 - Games -->
-      <tr>
-        <td>23</td><td>Youhanna Bebawy</td><td>0 - 0</td><td>Patrick Beshay</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>24</td><td>Mina Fahmy</td><td>0 - 0</td><td>Youssef Shaker</td><td>Name</td>
-      </tr>
+    <table>
+      <thead>
+        <tr>
+          <th>Game #</th>
+          <th>Player 1</th>
+          <th>Score</th>
+          <th>Player 2</th>
+          <th>Winner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Group 1 - Games -->
+        <tr>
+          <td>21</td>
+          <td>Peter Kelada</td>
+          <td>0 - 0</td>
+          <td>Matthew Beshay</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>David Gobran</td>
+          <td>0 - 0</td>
+          <td>Bishoy Ibrahim</td>
+          <td>Name</td>
+        </tr>
 
-      <!-- Group 3 - Games -->
-      <tr>
-        <td>25</td><td>Daniel EAB</td><td>0 - 0</td><td>John Gendy</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>26</td><td>Mina Shaker</td><td>0 - 0</td><td>Pola Faris</td><td>Name</td>
-      </tr>
+        <!-- Group 2 - Games -->
+        <tr>
+          <td>23</td>
+          <td>Youhanna Bebawy</td>
+          <td>0 - 0</td>
+          <td>Patrick Beshay</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>Mina Fahmy</td>
+          <td>0 - 0</td>
+          <td>Youssef Shaker</td>
+          <td>Name</td>
+        </tr>
 
-      <!-- Group 4 - Games -->
-      <tr>
-        <td>27</td><td>Kiro Ibrahim</td><td>0 - 0</td><td>Mark Khalil</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>28</td><td>Pierre Hanna</td><td>0 - 0</td><td>Andry Nasief</td><td>Name</td>
-      </tr>
+        <!-- Group 3 - Games -->
+        <tr>
+          <td>25</td>
+          <td>Daniel EAB</td>
+          <td>0 - 0</td>
+          <td>John Gendy</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>Mina Shaker</td>
+          <td>0 - 0</td>
+          <td>Pola Faris</td>
+          <td>Name</td>
+        </tr>
 
-      <!-- Group 5 - Games -->
-      <tr>
-        <td>29</td><td>Misho Shaker</td><td>0 - 0</td><td>Andrew Fahim</td><td>Name</td>
-      </tr>
-      <tr>
-        <td>30</td><td>Joe Ebrahim</td><td>0 - 0</td><td>Maro Fahim</td><td>Name</td>
-      </tr>
+        <!-- Group 4 - Games -->
+        <tr>
+          <td>27</td>
+          <td>Kiro Ibrahim</td>
+          <td>0 - 0</td>
+          <td>Mark Khalil</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>Pierre Hanna</td>
+          <td>0 - 0</td>
+          <td>Andry Nasief</td>
+          <td>Name</td>
+        </tr>
 
-    </tbody>
-  </table>
-</div>
+        <!-- Group 5 - Games -->
+        <tr>
+          <td>29</td>
+          <td>Misho Shaker</td>
+          <td>0 - 0</td>
+          <td>Andrew Fahim</td>
+          <td>Name</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Joe Ebrahim</td>
+          <td>0 - 0</td>
+          <td>Maro Fahim</td>
+          <td>Name</td>
+        </tr>
 
-<p>Last Updated: 1:30 AM (Dec 15 - 1)</p>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Last Updated: 11:30 PM (Dec 20)</p>
 
 </body>
+
 </html>
