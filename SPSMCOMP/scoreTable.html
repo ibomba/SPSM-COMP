@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/ppp.png">
+  <title>SPSM-COMP</title>
+
+  <style>
+    body {
+      font-family: 'Afacad', sans-serif;
+      background-color: #212129;
+      margin: 0;
+      color: #ECF0F1;
+      font-size: 0.8rem;
+    }
+
+    table {
+      width: 93%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: rgb(52, 50, 58);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    th,
+    td {
+      border: 1px solid #ededed;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .sTbl th {
+      background-color: #564f9c;
+      /* Set your desired background color here */
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgb(42, 40, 47);
+    }
+
+    .sT tr:nth-child(1) {
+      background-color: rgb(212, 198, 238);
+      color: #212129;
+    }
+
+    .sT tr:nth-child(2) {
+      background-color: rgb(193, 181, 217);
+      color: #212129;
+    }
+
+    .sT tr:nth-child(3) {
+      background-color: rgb(171, 161, 193);
+      color: #212129;
+    }
+
+    tr:hover {
+      background-color: hsl(258, 12%, 34%);
+    }
+
+    .sT tr:hover {
+      background-color: #564f9c;
+      color: #fff;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-left: 2.5rem;
+      margin-right: 3rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: rgb(241, 209, 23);
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      width: 90%;
+      padding-left: 2rem;
+    }
+
+    .button {
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      padding: 7px 12px;
+      height: 100%;
+      width: 93%;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: hsl(258, 12%, 34%);
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: hsl(257, 13%, 46%);
+    }
+
+    .BlockPick {
+      justify-content: space-evenly;
+      background-color: #31313a;
+      /* Choose your desired background color */
+      margin: 1.5rem;
+      padding: 15px;
+      gap: 15px;
+      border-radius: 15px;
+      text-align: center;
+      /* Center the items horizontally */
+      display: flex;
+      /* Create a flex container */
+      align-items: center;
+    }
+
+    .Block {
+      background-color: #31313a;
+      /* Choose your desired background color */
+      margin: 1.5rem;
+      padding-bottom: 1px;
+      padding-top: 1px;
+      border-radius: 15px;
+    }
+
+    .Block h1 {
+      margin-left: 2rem;
+      margin-top: 12px;
+      margin-bottom: -7px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>SPSM Ping Pong Tournament</h1>
+
+  <div class="BlockPick">
+    <a href="index.html" class="button">
+      Bracket Schedule
+    </a>
+    <a href="scoreTable.html" class="button">
+      Score Board
+    </a>
+
+    <a href="placements.html" class="button">
+      Placements
+    </a>
+
+    <a href="rules.html" class="button">
+      Rules
+    </a>
+  </div>
+
+  <div class="Block">
+    <div class="sT">
+      <h1>Score Board - Arranged By Wins</h1>
+      <table id="scoreTable">
+        <thead>
+          <tr class="sTbl">
+            <th>Player #</th>
+            <th>Name</th>
+            <th>Wins</th>
+            <th>Total Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Matthew Beshay</td><td>2</td><td>22</td></tr>
+
+          <tr><td>2</td><td>Peter Kelada</td><td>2</td><td>22</td></tr>
+
+          <tr><td>3</td><td>David Gobran</td><td>0</td><td>14</td></tr>
+
+          <tr><td>4</td><td>Bishoy Ibrahim</td><td>0</td><td>10</td></tr>
+
+          <tr><td>5</td><td>Youhanna Bebawy</td><td>1</td><td>20</td></tr>
+
+          <tr><td>6</td><td>Mina Fahmy</td><td>2</td><td>22</td></tr>
+
+          <tr><td>7</td><td>Patrick Beshay</td><td>0</td><td>13</td></tr>
+
+          <tr><td>8</td><td>Youssef Shaker</td><td>2</td><td>22</td></tr>
+
+          <tr><td>9</td><td>Daniel EAB</td><td>0</td><td>16</td></tr>
+
+          <tr><td>10</td><td>Mina Shaker</td><td>0</td><td>0</td></tr>
+
+          <tr><td>11</td><td>John Gendy</td><td>0</td><td>0</td></tr>
+
+          <tr><td>12</td><td>Pola Faris</td><td>2</td><td>22</td></tr>
+
+          <tr><td>13</td><td>Kirolos Ibrahim</td><td>2</td><td>22</td></tr>
+
+          <tr><td>14</td><td>Mark Khalil</td><td>0</td><td>3</td></tr>
+
+          <tr><td>15</td><td>Pierre Hanna</td><td>0</td><td>9</td></tr>
+
+          <tr><td>16</td><td>Andry Nasief</td><td>2</td><td>22</td></tr>
+
+          <tr><td>17</td><td>Misho Shaker</td><td>0</td><td>0</td></tr>
+
+          <tr><td>18</td><td>Andrew Fahim</td><td>0</td><td>5</td></tr>
+
+          <tr><td>19</td><td>Joe Ebrahim</td><td>2</td><td>22</td></tr>
+
+          <tr><td>20</td><td>Maro Fahim</td><td>0</td><td>0</td></tr>
+        </tbody>
+      </table>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to sort the specified table based on the score
+    document.addEventListener('DOMContentLoaded', function () {
+      var table = document.getElementById('scoreTable');
+      var tbody = table.querySelector('tbody');
+      var rows = [].slice.call(tbody.querySelectorAll('tr'));
+
+      rows.sort(function (a, b) {
+        var aValue = parseInt(a.cells[3].textContent);
+        var bValue = parseInt(b.cells[3].textContent);
+        return bValue - aValue;
+      });
+
+      rows.forEach(function (row) {
+        tbody.appendChild(row);
+      });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var table = document.getElementById('scoreTable');
+      var tbody = table.querySelector('tbody');
+      var rows = [].slice.call(tbody.querySelectorAll('tr'));
+
+      rows.sort(function (a, b) {
+        var aValue = parseInt(a.cells[2].textContent);
+        var bValue = parseInt(b.cells[2].textContent);
+        return bValue - aValue;
+      });
+
+      rows.forEach(function (row) {
+        tbody.appendChild(row);
+      });
+    });
+  </script>
+  <p>Last Updated: 11:30 PM (Dec 20)</p>
+
+</body>
+
+</html>
