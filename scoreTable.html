@@ -94,7 +94,7 @@
         width: 1.7rem;
         margin-bottom: -6px;
         margin-right: 5px;
-        margin-left: -7px
+        margin-left: -7px;
       }
 
     .button {
@@ -151,6 +151,17 @@
       margin-top: 12px;
       margin-bottom: -7px;
     }
+
+    table img{
+      width: 2.2rem;
+      margin-right: 5px;
+      margin-top: -12px;
+      margin-bottom: -13px;
+    }
+
+    th, td:nth-child(2){
+      text-align: left;
+    }
   </style>
 </head>
 
@@ -176,45 +187,45 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td>Matthew Beshay</td><td>3</td><td>66</td></tr>
+          <tr><td>1</td><td><img src="ranks/master.png" alt="Master" >Matthew Beshay</td><td>3</td><td>66</td></tr>
 
-          <tr><td>2</td><td>Peter Kelada</td><td>1</td><td>54</td></tr>
+          <tr><td>2</td><td><img src="ranks/silver.png" alt="Silver" >Peter Kelada</td><td>1</td><td>54</td></tr>
 
-          <tr><td>3</td><td>Tommy Ghaly</td><td>1</td><td>50</td></tr>
+          <tr><td>3</td><td><img src="ranks/silver.png" alt="Silver" >Tommy Ghaly</td><td>1</td><td>50</td></tr>
 
-          <tr><td>4</td><td>Bishoy Ibrahim</td><td>1</td><td>46</td></tr>
+          <tr><td>4</td><td><img src="ranks/silver.png" alt="Silver" >Bishoy Ibrahim</td><td>1</td><td>46</td></tr>
 
-          <tr><td>5</td><td>Youhanna Bebawy</td><td>0</td><td>51</td></tr>
+          <tr><td>5</td><td><img src="ranks/bronze.png" alt="Bronze" >Youhanna Bebawy</td><td>0</td><td>51</td></tr>
 
-          <tr><td>6</td><td>Mina Fahmy</td><td>2</td><td>54</td></tr>
+          <tr><td>6</td><td><img src="ranks/silver.png" alt="Silver" >Mina Fahmy</td><td>2</td><td>54</td></tr>
 
-          <tr><td>7</td><td>Patrick Beshay</td><td>2</td><td>57</td></tr>
+          <tr><td>7</td><td><img src="ranks/gold.png" alt="Gold" >Patrick Beshay</td><td>2</td><td>57</td></tr>
 
-          <tr><td>8</td><td>Youssef Shaker</td><td>2</td><td>65</td></tr>
+          <tr><td>8</td><td><img src="ranks/gold.png" alt="Gold" >Youssef Shaker</td><td>2</td><td>65</td></tr>
 
-          <tr><td>9</td><td>Daniel EAB</td><td>0</td><td>16</td></tr>
+          <tr><td>9</td><td><img src="ranks/bronze.png" alt="Bronze" >Daniel EAB</td><td>0</td><td>16</td></tr>
 
-          <tr><td>10</td><td>Mina Shaker</td><td>0</td><td>9</td></tr>
+          <tr><td>10</td><td><img src="ranks/bronze.png" alt="Bronze" >Mina Shaker</td><td>0</td><td>9</td></tr>
 
-          <tr><td>11</td><td>John Gendy</td><td>1</td><td>22</td></tr>
+          <tr><td>11</td><td><img src="ranks/bronze.png" alt="Bronze" >John Gendy</td><td>1</td><td>22</td></tr>
 
-          <tr><td>12</td><td>Pola Faris</td><td>2</td><td>63</td></tr>
+          <tr><td>12</td><td><img src="ranks/gold.png" alt="Gold" >Pola Faris</td><td>2</td><td>63</td></tr>
 
-          <tr><td>13</td><td>Kirolos Ibrahim</td><td>2</td><td>59</td></tr>
+          <tr><td>13</td><td><img src="ranks/gold.png" alt="Gold" >Kirolos Ibrahim</td><td>2</td><td>59</td></tr>
 
-          <tr><td>14</td><td>Mark Khalil</td><td>0</td><td>24</td></tr>
+          <tr><td>14</td><td><img src="ranks/bronze.png" alt="Bronze" >Mark Khalil</td><td>0</td><td>24</td></tr>
 
-          <tr><td>15</td><td>Pierre Hanna</td><td>0</td><td>26</td></tr>
+          <tr><td>15</td><td><img src="ranks/bronze.png" alt="Bronze" >Pierre Hanna</td><td>0</td><td>26</td></tr>
 
-          <tr><td>16</td><td>Andry Nasief</td><td>3</td><td>66</td></tr>
+          <tr><td>16</td><td><img src="ranks/master.png" alt="Master" >Andry Nasief</td><td>3</td><td>66</td></tr>
 
-          <tr><td>17</td><td>Misho Shaker</td><td>0</td><td>13</td></tr>
+          <tr><td>17</td><td><img src="ranks/bronze.png" alt="Bronze" >Misho Shaker</td><td>0</td><td>13</td></tr>
 
-          <tr><td>18</td><td>Andrew Fahim</td><td>0</td><td>12</td></tr>
+          <tr><td>18</td><td><img src="ranks/bronze.png" alt="Bronze" >Andrew Fahim</td><td>0</td><td>12</td></tr>
 
-          <tr><td>19</td><td>Joe Ebrahim</td><td>3</td><td>66</td></tr>
+          <tr><td>19</td><td><img src="ranks/master.png" alt="Master" >Joe Ebrahim</td><td>3</td><td>66</td></tr>
 
-          <tr><td>20</td><td>Maro Fahim</td><td>1</td><td>38</td></tr>
+          <tr><td>20</td><td><img src="ranks/silver.png" alt="Silver" >Maro Fahim</td><td>1</td><td>38</td></tr>
         </tbody>
       </table>
       </table>
@@ -256,6 +267,49 @@
         tbody.appendChild(row);
       });
     });
+
+//     document.addEventListener('DOMContentLoaded', function () {
+//   var table = document.getElementById('scoreTable');
+//   var rows = table.querySelectorAll('tbody tr');
+
+//   // Function to add image to the left and center the word
+//   function addImageAndCenterWord() {
+//     var secondRow = rows[0]; // Second row index is 1
+//     var cell2 = secondRow.cells[1]; // Cell 2 index is 1
+
+//     var image = document.createElement('img');
+//     image.src = 'ranks/master.png';
+//     image.alt = 'paddle';
+//     image.style.width = '2rem';
+//     image.style.marginBottom = '0px';
+//     image.style.marginRight = '5px';
+
+//     var wordContainer = document.createElement('div');
+//     wordContainer.style.display = 'flex';
+//     wordContainer.style.alignItems = 'center';
+//     wordContainer.style.padding = '-4px';
+
+//     // Append the image to the left of the word container
+//     wordContainer.appendChild(image);
+
+//     // Create a text node for the existing word
+//     var wordTextNode = document.createTextNode(cell2.textContent.trim());
+
+//     // Append the text node to the word container
+//     wordContainer.appendChild(wordTextNode);
+
+//     // Clear the content of cell 2
+//     cell2.innerHTML = '';
+
+//     // Append the word container to cell 2
+//     cell2.appendChild(wordContainer);
+//   }
+
+//   // Call the function to add image to the left and center the word
+//   addImageAndCenterWord();
+// });
+
+
   </script>
   <p>Last Updated: 11:30 PM (Dec 20)</p>
 
