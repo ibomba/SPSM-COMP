@@ -30,7 +30,7 @@
     th,
     td {
       border: 1px solid #ededed;
-      padding: 10px;
+      padding: 8px;
       text-align: center;
     }
 
@@ -45,28 +45,24 @@
       background-color: rgb(42, 40, 47);
     }
 
-    .sT tr:nth-child(1) {
-      background-color: rgb(212, 198, 238);
-      color: #212129;
+    .sT tr:nth-child(-n+13) td:nth-child(2){
+      color: #cf842a;
     }
 
-    .sT tr:nth-child(2) {
-      background-color: rgb(193, 181, 217);
-      color: #212129;
+    .sT tr:nth-child(-n+12) td:nth-child(2){
+      color: rgb(119, 136, 247);
     }
 
-    .sT tr:nth-child(3) {
-      background-color: rgb(171, 161, 193);
-      color: #212129;
+    .sT tr:nth-child(-n+7) td:nth-child(2){
+      color: rgb(233, 192, 71);
+    }
+
+    .sT tr:nth-child(-n+3) td:nth-child(2){
+      color: rgb(240, 72, 66);
     }
 
     tr:hover {
       background-color: hsl(258, 12%, 34%);
-    }
-
-    .sT tr:hover {
-      background-color: #564f9c;
-      color: #fff;
     }
 
     h1,
@@ -117,24 +113,7 @@
       background: hsl(257, 13%, 46%);
     }
 
-    .BlockPick {
-        justify-content: space-evenly;
-        background-color: #31313a;
-        /* Choose your desired background color */
-        margin: 0rem;
-        padding: 15px;
-        padding-left: 25px;
-        padding-right: 25px;
-        gap: 15px;
-        text-align: center;
-        /* Center the items horizontally */
-        display: flex;
-        /* Create a flex container */
-        align-items: center;
-        box-shadow: 0 10px 12px #212129;
-        position: sticky;
-        top: 0;
-      }
+  
 
       .Block {
         background-color: #31313a;
@@ -157,14 +136,42 @@
       padding: 0;
       vertical-align: middle;
       margin: 0;
-      text-align: center;
+      
     }
 
     th:nth-child(2), td:nth-child(2){
-      margin: 0;
       padding: 0;
-      text-align: center;
     }
+
+    td:nth-child(2){
+      padding-right: 4px;
+      padding-top: 2px;
+    }
+
+    .BlockPick {
+        justify-content: space-evenly;
+        background-color: #31313a;
+        /* Choose your desired background color */
+        margin: 0rem;
+        padding: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        gap: 15px;
+        text-align: center;
+        /* Center the items horizontally */
+        display: flex;
+        /* Create a flex container */
+        align-items: center;
+        box-shadow: 0 10px 12px #212129;
+        position: sticky;
+        top: 0;
+      }
+
+      .sT tr:hover {
+      background-color: #564f9c;
+      color: #fff;
+    }
+    
   </style>
 </head>
 
@@ -183,7 +190,7 @@
       <table id="scoreTable">
         <thead>
           <tr class="sTbl">
-            <th>Player #</th>
+            <th>Code#</th>
             <th><img src="ranks/unranked.png" alt="Unranked" ></th>
             <th>Name</th>
             <th>Wins</th>
@@ -328,13 +335,32 @@ function replaceTextWithImage() {
     firstCell.appendChild(image);
   }
 }
-
-// Call the function after the DOM has loaded
 replaceTextWithImage();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var table = document.getElementById('scoreTable');
+    var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+    for (var i = 0; i < rows.length; i++) {
+      var cells = rows[i].getElementsByTagName('td');
+      if (cells.length >= 4) {
+        // Extract numbers from cell 3 and cell 4
+        var num3 = parseInt(cells[3].innerHTML);
+        var num4 = parseInt(cells[4].innerHTML);
+
+        // Calculate the sum
+        var result = Math.log(num4) * num3;
+        result = result.toFixed(1);
+
+        // Replace the content of cell 3 with the sum
+        cells[1].innerHTML += result;
+      }
+    }
+  });
+
   </script>
-  <p>Last Updated: 11:30 PM (Dec 20)</p>
+  <p>Last Updated: 11:30 AM (Jan 9)</p>
 
 </body>
 
