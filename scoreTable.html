@@ -47,18 +47,22 @@
 
     .sT tr:nth-child(-n+13) td:nth-child(2){
       color: #cf842a;
+      background-color: rgba(219, 135, 50, 0.08);
     }
 
     .sT tr:nth-child(-n+12) td:nth-child(2){
       color: rgb(119, 136, 247);
+      background-color: rgba(75, 132, 255, 0.202);
     }
 
     .sT tr:nth-child(-n+7) td:nth-child(2){
       color: rgb(233, 192, 71);
+      background-color: rgba(255, 211, 51, 0.095);
     }
 
     .sT tr:nth-child(-n+3) td:nth-child(2){
       color: rgb(240, 72, 66);
+      background-color: rgba(255, 83, 83, 0.095);
     }
 
     tr:hover {
@@ -346,12 +350,14 @@ document.addEventListener('DOMContentLoaded', function () {
       var cells = rows[i].getElementsByTagName('td');
       if (cells.length >= 4) {
         // Extract numbers from cell 3 and cell 4
-        var num3 = parseInt(cells[3].innerHTML);
-        var num4 = parseInt(cells[4].innerHTML);
+        var wins = parseInt(cells[3].innerHTML);
+        var tps = parseInt(cells[4].innerHTML);
 
         // Calculate the sum
-        var result = Math.log(num4) * num3;
+        //var result = Math.log(num4) * num3;
+        var result = (Math.PI * Math.E * wins) + (tps / 22);
         result = result.toFixed(1);
+
 
         // Replace the content of cell 3 with the sum
         cells[1].innerHTML += result;
