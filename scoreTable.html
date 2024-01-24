@@ -189,7 +189,7 @@
   <h1>SPSM Ping Pong Tournament</h1>
 
   <div class="BlockPick">
-    <a href="index.html" class="button"> Schedule </a>
+    <a href="index.html" class="button"> Tourneys </a>
     <a href="scoreTable.html" class="button"> Ranking </a>
     <a href="rules.html" class="button"> Rules </a>
   </div>
@@ -359,11 +359,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Calculate the sum
         //var result = Math.log(num4) * num3;
-        var result = (Math.PI * Math.E * wins) + (tps / 22) - wins;
+        var result = ((Math.PI * Math.E * wins) + (tps / 22) - wins);
         if(wins == 0){
           result = 0;
         }
-        result = result.toFixed(1);
+        result = result.toFixed(2);
 
 
         cells[0].innerHTML += result;
@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   </script>
-  <p>Last Updated: 10:15 AM (Jan 12)</p>
+    <p>Last Updated: 9:00 AM (Jan 24)</p>
 
 </body>
 
