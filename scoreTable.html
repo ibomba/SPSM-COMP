@@ -127,7 +127,7 @@
         margin-top: 1.5rem;
         padding-bottom: 1px;
         padding-top: 1px;
-        border-radius: 15px;
+        border-radius: 10px;
       }
 
     .Block h1 {
@@ -246,6 +246,30 @@
           <tr><td>r</td><td>(19) Joe Ebrahim</td><td>3</td><td>100</td></tr>
 
           <tr><td>r</td><td>(20) Maro Fahim</td><td>1</td><td>79</td></tr>
+
+          <tr><td>r</td><td>(21) Mena (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(22) Maran (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(23) Giovanni (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(24) Philopateer (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(25) Christian (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(26) Toby (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(27) Luke (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(28) Tommy (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(29) Martin (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(30) Samuel (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(31) Youseef (MS)</td><td>0</td><td>0</td></tr>
+
+          <tr><td>r</td><td>(32) Mark (MS)</td><td>0</td><td>0</td></tr>
         </tbody>
       </table>
       </table>
@@ -334,7 +358,7 @@ function replaceTextWithImage() {
     firstCell.appendChild(image);
   }
 
-  for (var i = 13; i <= 19; i++) {
+  for (var i = 13; i <= 31; i++) {
     var row = tbody.querySelector('tr:nth-child(' + (i + 1) + ')'); // Selecting rows 2 to 4
     var firstCell = row.querySelector('td:nth-child(1)'); // Selecting the first column
     var image = document.createElement('img');
@@ -359,11 +383,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Calculate the sum
         //var result = Math.log(num4) * num3;
-        var result = ((Math.PI * Math.E * wins) + (tps / 22) - wins);
+        var result = ((Math.PI * wins * Math.E) + (tps / 22) - wins);
         if(wins == 0){
           result = 0;
         }
-        result = result.toFixed(2);
+        result = result.toFixed(1);
 
 
         cells[0].innerHTML += result;
@@ -372,7 +396,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   </script>
-    <p>Last Updated: 9:00 AM (Jan 24)</p>
+    <p>Last Updated: 10:00 PM (Feb 3)</p>
 
 </body>
 
