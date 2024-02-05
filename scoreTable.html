@@ -45,7 +45,7 @@
       background-color: rgb(42, 40, 47);
     }
 
-    .sT tr:nth-child(-n+13) td:nth-child(1){
+    .sT tr:nth-child(-n+14) td:nth-child(1){
       color: #c38539;
       background-color: rgba(219, 135, 50, 0.08);
       font-weight: bold;
@@ -249,7 +249,7 @@
 
           <tr><td>r</td><td>(21) Mena (MS)</td><td>0</td><td>0</td></tr>
 
-          <tr><td>r</td><td>(22) Maran (MS)</td><td>0</td><td>0</td></tr>
+          <tr><td>r</td><td>(22) Maran (MS)</td><td>1</td><td>22</td></tr>
 
           <tr><td>r</td><td>(23) Giovanni (MS)</td><td>0</td><td>0</td></tr>
 
@@ -265,7 +265,7 @@
 
           <tr><td>r</td><td>(29) Martin (MS)</td><td>0</td><td>0</td></tr>
 
-          <tr><td>r</td><td>(30) Samuel (MS)</td><td>0</td><td>0</td></tr>
+          <tr><td>r</td><td>(30) Samuel (MS)</td><td>0</td><td>18</td></tr>
 
           <tr><td>r</td><td>(31) Youseef (MS)</td><td>0</td><td>0</td></tr>
 
@@ -348,7 +348,7 @@ function replaceTextWithImage() {
     firstCell.appendChild(image);
   }
 
-  for (var i = 12; i <= 12; i++) {
+  for (var i = 12; i <= 13; i++) {
     var row = tbody.querySelector('tr:nth-child(' + (i + 1) + ')'); // Selecting rows 2 to 4
     var firstCell = row.querySelector('td:nth-child(1)'); // Selecting the first column
     var image = document.createElement('img');
@@ -358,7 +358,7 @@ function replaceTextWithImage() {
     firstCell.appendChild(image);
   }
 
-  for (var i = 13; i <= 31; i++) {
+  for (var i = 14; i <= 31; i++) {
     var row = tbody.querySelector('tr:nth-child(' + (i + 1) + ')'); // Selecting rows 2 to 4
     var firstCell = row.querySelector('td:nth-child(1)'); // Selecting the first column
     var image = document.createElement('img');
