@@ -45,7 +45,7 @@
       background-color: rgb(42, 40, 47);
     }
 
-    .sT tr:nth-child(-n+19) td:nth-child(1){
+    .sT tr:nth-child(-n+20) td:nth-child(1){
       color: #c38539;
       background-color: rgba(219, 135, 50, 0.08);
       font-weight: bold;
@@ -295,7 +295,6 @@
       });
     });
 
-
     document.addEventListener('DOMContentLoaded', function () {
       var table = document.getElementById('scoreTable');
       var tbody = table.querySelector('tbody');
@@ -348,7 +347,7 @@ function replaceTextWithImage() {
     firstCell.appendChild(image);
   }
 
-  for (var i = 12; i <= 18; i++) {
+  for (var i = 12; i <= 19; i++) {
     var row = tbody.querySelector('tr:nth-child(' + (i + 1) + ')'); // Selecting rows 2 to 4
     var firstCell = row.querySelector('td:nth-child(1)'); // Selecting the first column
     var image = document.createElement('img');
@@ -358,7 +357,7 @@ function replaceTextWithImage() {
     firstCell.appendChild(image);
   }
 
-  for (var i = 19; i <= 31; i++) {
+  for (var i = 20; i <= 31; i++) {
     var row = tbody.querySelector('tr:nth-child(' + (i + 1) + ')'); // Selecting rows 2 to 4
     var firstCell = row.querySelector('td:nth-child(1)'); // Selecting the first column
     var image = document.createElement('img');
@@ -368,7 +367,7 @@ function replaceTextWithImage() {
     firstCell.appendChild(image);
   }
 }
-replaceTextWithImage();
+  replaceTextWithImage();
 });
 
 document.addEventListener('DOMContentLoaded', function () {
